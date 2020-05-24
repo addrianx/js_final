@@ -1,0 +1,23 @@
+{
+  "name": "js_todolist",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "wminv00 <707640959@qq.com>",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

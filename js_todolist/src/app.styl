@@ -1,0 +1,110 @@
+@import 'reset'
+
+global-reset()
+
+body, html, #app
+  width: 100%;
+  height: 100%;
+  color #333
+input, textarea
+  border 1px solid #d2dde7
+  border-radius 2px
+  padding 0 3px
+  outline none
+  &:focus
+    border 1px solid #78879d
+textarea
+  resize none
+  padding 2px 3px
+select
+  height 29px
+input
+  height 30px
+button
+  outline none
+@font-face
+  font-family: 'iconfont';  /* project id 1215617 */
+  src: url('//at.alicdn.com/t/font_1215617_q5kzkvvhkii.eot');
+  src: url('//at.alicdn.com/t/font_1215617_q5kzkvvhkii.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1215617_q5kzkvvhkii.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1215617_q5kzkvvhkii.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1215617_q5kzkvvhkii.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1215617_q5kzkvvhkii.svg#iconfont') format('svg');
+
+
+.iconfont
+  font-family "iconfont" !important
+  font-size 16px;font-style normal
+  -webkit-font-smoothing  antialiased
+  -webkit-text-stroke-width  0.2px
+  -moz-osx-font-smoothing  grayscale
+
+.clearfix
+  &:after
+    content ''
+    display block
+    clear both
+.dis-flex
+  display flex
+  .w-80
+    width 80px
+    text-align right
+    padding-right 8px
+    color #999
+    line-height 30px
+  .flex
+    flex 1
+
+.relative
+  position relative
+
+.todo-content
+  height 100%
+  background-color: #f5f5f5;
+  display flex
+.func-menu
+  top 0
+  left 0
+  background #fff
+  box-shadow 0px 1px 1px #ccc
+  height 100%
+  width 120px
+  transition width 0.2s
+  .li
+    padding 0 10px
+    line-height 50px
+    cursor pointer
+    border-bottom 1px solid #dfdfdf
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+  &.mode
+    width 40px
+.new-group.popup
+  .dialog
+    padding 20px
+    width 348px
+.preview-img.popup
+  .dialog
+    background none
+    box-shadow none
+    .content
+      position relative
+      img
+        width 100%
+        height 100%
+      .close
+        position absolute
+        float right
+        top 10px
+        right 10px
+        width 15px
+        height @width
+        line-height @width
+        text-align center
+        color #ffffff
+        cursor pointer
+        text-shadow 1px 1px 3px #333
+        &:hover
+          transform rotate(360deg)
+          transition all 1s
